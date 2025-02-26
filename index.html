@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            position: relative;
+
+            >div {
+                height: 100%;
+                width: 25%;
+                /* border: 2px solid red; */
+                font-size: 120px;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                transition: .4s;
+                position: relative;
+                display: flex;
+
+
+
+                a {
+                    text-decoration: none;
+                    position: absolute;
+                    top: -50px;
+                    left: 20%;
+                    transform: rotate(90deg);
+                    transform-origin: left bottom;
+                    display: inline-block;
+                    color: rgba(255, 255, 255, 0.527);
+                    /* border: 2px solid blue; */
+                    text-transform: uppercase;
+                    transition: .5s;
+
+                }
+
+                &:nth-of-type(1) {
+                    background-image: url(assets/img/bg1.jpg);
+
+                    &:hover {
+                        width: 40%;
+
+                        >a {
+                            color: rgba(255, 255, 255, 0.911);
+                            font-size: 60px;
+                            transform: translateY(120px) rotate(90deg)rotate(270deg);
+                            transform-origin: right bottom;
+
+                        }
+
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    background-image: url(assets/img/bg2.jpeg);
+
+                    &:hover {
+                        width: 40%;
+
+                        >a {
+                            color: rgba(255, 255, 255, 0.911);
+                            font-size: 60px;
+                            transform: translateY(120px) rotate(90deg)rotate(270deg);
+                            transform-origin: right bottom;
+
+                        }
+
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    background-image: url(assets/img/bg3.jpg);
+
+                    &:hover {
+                        width: 40%;
+
+                        >a {
+                            color: rgba(255, 255, 255, 0.911);
+                            font-size: 60px;
+                            transform: translateY(120px) rotate(90deg)rotate(270deg);
+                            transform-origin: right bottom;
+
+                        }
+
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    background-image: url(assets/img/bg4.webp);
+
+                    &:hover {
+                        width: 40%;
+
+                        >a {
+                            color: rgba(255, 255, 255, 0.911);
+                            font-size: 60px;
+                            transform: translateY(120px) rotate(90deg)rotate(270deg);
+                            transform-origin: right bottom;
+
+                        }
+
+                    }
+                }
+
+                p{
+                    border: 2px solid rgba(255, 255, 255, 0.425);
+                    width: 70%;
+                    height: 70%;
+                    font-size: 30px;
+                    display: flex;justify-content: center;align-items: center;
+                    margin-inline: 50px;
+                    margin-top: 50px;
+                    color: white;
+                    padding-inline: 20px;
+                    border-radius: 20px;
+                    transition: .7s;
+                    opacity: 0;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="menu">
+        <div><a href="">home</a><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nostrum nam optio repudiandae minima omnis libero iste veniam sequi dolorum?</p></div>
+        <div><a href="">about</a><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto fuga atque praesentium et alias accusamus magnam minus in odio?</p></div>
+        <div><a href="">products</a><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias aliquid eaque voluptatibus ad, ea id reiciendis quidem vel atque unde.</p></div>
+        <div><a href="">contact</a><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, nisi saepe suscipit aspernatur nihil porro voluptatibus atque laudantium eius voluptatum!</p></div>
+
+
+    </main>
+
+</body>
+
+</html>
